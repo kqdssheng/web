@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="zh" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-杂项/《图解密码技术》读后总结" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">《图解密码技术》读后总结 | 扛枪的书生</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://kqdssheng.github.io/web/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://kqdssheng.github.io/web/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://kqdssheng.github.io/web/docs/杂项/《图解密码技术》读后总结"><meta data-rh="true" property="og:locale" content="zh"><meta data-rh="true" name="docusaurus_locale" content="zh"><meta data-rh="true" name="docsearch:language" content="zh"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="《图解密码技术》读后总结 | 扛枪的书生"><meta data-rh="true" name="description" content="十分不耐烦，乃为人大病。"><meta data-rh="true" property="og:description" content="十分不耐烦，乃为人大病。"><link data-rh="true" rel="icon" href="/web/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://kqdssheng.github.io/web/docs/杂项/《图解密码技术》读后总结"><link data-rh="true" rel="alternate" href="https://kqdssheng.github.io/web/docs/杂项/《图解密码技术》读后总结" hreflang="zh"><link data-rh="true" rel="alternate" href="https://kqdssheng.github.io/web/docs/杂项/《图解密码技术》读后总结" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://SPYLCPE3W9-dsn.algolia.net" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="/web/blog/rss.xml" title="扛枪的书生 RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/web/blog/atom.xml" title="扛枪的书生 Atom Feed">
+
+
+
+
+<link rel="search" type="application/opensearchdescription+xml" title="扛枪的书生" href="/web/opensearch.xml"><link rel="stylesheet" href="/web/assets/css/styles.bd0a5f0e.css">
+<script src="/web/assets/js/runtime~main.224207a9.js" defer="defer"></script>
+<script src="/web/assets/js/main.e046f592.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/web/img/logo.svg"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="navbar navbar--fixed-top navbarHideable_m1mJ navbar--primary"><div class="navbar__inner"><div class="navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/web/"><div class="navbar__logo"><img src="/web/img/logo.svg" alt="kqdssheng" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/web/img/logo.svg" alt="kqdssheng" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/web/docs/">文章</a><a class="navbar__item navbar__link" href="/web/blog">说说</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">其它</a><ul class="dropdown__menu"><li><a href="https://www.douban.com/doulist/154252035/" target="_blank" rel="noopener noreferrer" class="dropdown__link">豆瓣<svg width="12" height="12" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li><a href="https://www.zhihu.com/people/KqdsshenG" target="_blank" rel="noopener noreferrer" class="dropdown__link">知乎<svg width="12" height="12" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li><a href="https://www.cnblogs.com/kqdssheng" target="_blank" rel="noopener noreferrer" class="dropdown__link">博客园<svg width="12" height="12" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li><a href="https://github.com/kqdssheng" target="_blank" rel="noopener noreferrer" class="dropdown__link">GitHub<svg width="12" height="12" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="navbar__items navbar__items--right"><div class="navbarSearchContainer_Bca1"><button type="button" class="DocSearch DocSearch-Button" aria-label="搜索 (Command+K)"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">搜索</span></span><span class="DocSearch-Button-Keys"></span></button></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="切换浅色/暗黑模式（当前为浅色模式）" aria-label="切换浅色/暗黑模式（当前为浅色模式）" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd sidebarWithHideableNavbar_wUlq"><a tabindex="-1" class="sidebarLogo_isFc" href="/web/"><img src="/web/img/logo.svg" alt="kqdssheng" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/web/img/logo.svg" alt="kqdssheng" class="themedComponent_mlkZ themedComponent--dark_xIcU"></a><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/web/docs/">软件百宝箱</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/web/docs/category/渗透">渗透</a><button aria-label="展开侧边栏分类 &#x27;渗透&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/web/docs/category/linux">Linux</a><button aria-label="展开侧边栏分类 &#x27;Linux&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/web/docs/category/windows">Windows</a><button aria-label="展开侧边栏分类 &#x27;Windows&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/web/docs/category/杂项-1">杂项</a><button aria-label="折叠侧边栏分类 &#x27;杂项&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/web/docs/杂项/BurpSuite 设置上游代理访问内网">BurpSuite 设置上游代理访问内网</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/web/docs/杂项/Docker 使用总结">Docker 使用总结</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/web/docs/杂项/Git 总结">Git 总结</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/web/docs/杂项/MySQL 学习总结">MySQL 学习总结</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/web/docs/杂项/VMware 中的三种网络模式">VMware 中的三种网络模式</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/web/docs/杂项/《图解密码技术》读后总结">《图解密码技术》读后总结</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/web/docs/杂项/网络协议总结">网络协议总结</a></li></ul></li></ul></nav><button type="button" title="收起侧边栏" aria-label="收起侧边栏" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_kv0_"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/web/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/web/docs/category/杂项-1"><span itemprop="name">杂项</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">《图解密码技术》读后总结</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>《图解密码技术》读后总结</h1></header><blockquote>
+<p><strong>十分不耐烦，乃为人大病。</strong></p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="内容">内容<a href="#内容" class="hash-link" aria-label="内容的直接链接" title="内容的直接链接">​</a></h3>
+<p>1、密码学家工具箱：<strong>对称密码、公钥密码、单向散列函数、消息认证码、数字签名（证书）、伪随机数</strong>，这六类密码技术统称为密码学家工具箱。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143131232-2097408171-69a1ef654d7eb4879ba53a1d3120821f.png" width="570" height="441" class="img_ev3q"></p>
+<p>2、编码、位运算与加解密</p>
+<p>编码：将现实中的东西映射为比特序列的操作称为编码，编码通常是针对文字及图形符号。例如，同样一个字母，用不同的编码方式那么在内存中写入的比特序列也就是不一样的。字母m用ascii编码就是8位的01101101，而用utf-8却是另一串数字。对于人来说可读文字编码为比特序列就像是加密，但对于计算机来说，这就是一串可直视的文字。</p>
+<p>位运算：计算机在进行加密解密的过程中，操作的对象都是比特序列，而不会去区分操作对象是文本还是图片以及程序等。（其中使用的最广泛的比特列运算就是XOR异或运算，它的特性类似于黑白棋子的翻转：a⊕b⊕b=a⊕（b⊕b）=a⊕0=a）</p>
+<p>加解密：加密就像炒鸡蛋，通过一些方法打乱明文（文本、图片、程序等）的比特序列使其变成看起来一团脏的密文。但是加密不同于炒鸡蛋的一点就是，炒好的鸡蛋无法再还原回原来的鸡蛋状态，而打乱的密文却可以恢复成原本的明文。</p>
+<p>3、分组密码与流密码</p>
+<p>分组密码：每次只能处理特定长度的一块数据的一类密码算法。其中“一块”就称为分组，分组的比特数就是分组长度，不同算法所使用的分组长度均有所不同，不管分组长度多少，输入明文分组长度总是等于输出密文分组长度。例如，DES、三重DES、AES等大多数对称密码算法都属于分组密码。</p>
+<p>流密码：对数据流进行连续处理的一类密码算法。流密码中以1比特、8比特或32比特等为单位进行加密和解密。例如，一次性密码本就属于流密码。</p>
+<p>两者对比：分组密码处理完一个分组就结束了，因此不需要通过内部状态来记录加密的进行；而流密码是对一串数据流进行连续处理，因此需要保持内部状态。个人以为，这个内部是否保留完全取决于程序编写者是否有这个需要，非必需。</p>
+<p>4、分组密码的5种模式</p>
+<p>分组密码算法都只能加密特定长度的明文数据，如果要加密任意长度的明文，就需要对分组密码算法进行迭代，而分组密码的迭代方法就称为分组密码的模式。分组模式有很多种类，但主要模式为以下5种：</p>
+<p>（1）ECB模式：Electronic CodeBook mode（电子密码本模式）</p>
+<p>原理：该模式下，将明文分组加密之后的结果将直接成为密文分组。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143155854-1959537598-c59162290c95a85c1d73745a6467e180.png" width="588" height="649" class="img_ev3q"></p>
+<p>特征：</p>
+<ul>
+<li>明文分组与密文分组是一一对应的关系，如果明文中存在相同的分组，那么这些分组最终都被加密成相同的密文分组。如此一来攻击者便可以通过挪动密文分组的顺序来更改明文的内容。</li>
+</ul>
+<p>（2）CBC模式：Cipher Block Chaining mode（密码分组链接模式）</p>
+<p>原理：该模式下，首先将明文分组与前一个密文分组进行XOR运算，然后在对结果进行加密。由于密文分组前后之间存在着联系，故称为密文分组链接模式。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143215799-1367234300-5ec5613ce6810256adcc794fff8c0e2a.png" width="580" height="506" class="img_ev3q"></p>
+<p>特征：</p>
+<ul>
+<li>
+<p>每一个明文分组的加密都依赖于前一个密文分组，故整个明文消息的加密只能一个一个进行，不可并行处理。</p>
+</li>
+<li>
+<p>每一个密文分组的解密只依赖前一个密文分组和自身密文分组，故可并行处理。而且在密文固定的长度下，损坏一个分组，也仅是影响2个明文分组的解密。</p>
+</li>
+<li>
+<p>由于明文分组在加密前会先于前一个密文分组XOR，故即便明文中存在相同的分组，在密文分组中也不一定会出现相同的密文分组。</p>
+</li>
+<li>
+<p>攻击：如果攻击者在解密过程中对初始化向量的任意比特进行翻转，则对应的第一个明文分组的对应比特也会翻转，这就是初始化向量的比特翻转攻击。（此操作仅能影响第一个分组，若对密文分组进行翻转，则会产生不可预估的影响，无意义。）</p>
+</li>
+<li>
+<p>初始化向量：当加密第一个明文分组时，由于不存在“前一个密文分组”，因此需要事先准备一个长度为分组长度的比特序列来代替“前一个密文分组”，这个比特序列就称为初始化向量（IV）。</p>
+</li>
+</ul>
+<p>（3）CFB模式：Cipher FeedBack mode（密文反馈模式）</p>
+<p>原理：该模式下，前一个密文分组会被送回到密码算法的输入端。所谓反馈，这里就是指返回输入端的意思。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143230569-1482942887-5a3562bb57e04f2802feafa6639fb15b.png" width="580" height="651" class="img_ev3q"></p>
+<p>特征：</p>
+<ul>
+<li>
+<p>CFB与CBC结构上来看极其相似，但是CFB模式可以避免初始化向量攻击。</p>
+</li>
+<li>
+<p>CFB模式中，密码算法的输出相当于一次性密码本中的随机比特序列，虽然此随机序列并非真正的随机序列，但极为接近，故该随机序列也被称为密钥流。由于在该模式中明文数据可以被逐比特加密，因此也可以将CFB模式看做是一种使用分组密码来实现流密码的方式。</p>
+</li>
+<li>
+<p>攻击：将先前的分组进行保留，之后再用保存的分组替换掉新出现的分组，这样在解密时就会将旧分组的信息解密然后替换成为新的明文，这就是重放攻击。这种攻击需要假设新旧分组加解密过程中使用的密钥是相同的才行，个人感觉不实用。如此方式CBC模式也可以被重放攻击。</p>
+</li>
+</ul>
+<p>（4）OFB模式：Output FeedBack mode（输出反馈模式）</p>
+<p>原理：该模式下，通过将明文分组和“密码算法的输出（密码算法对初始化向量循环加密的输出）”进行XOR来产生密文分组的。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143244813-303178797-d583860d706ebb4b9db222635f014faf.png" width="580" height="593" class="img_ev3q"></p>
+<p>特征：</p>
+<ul>
+<li>
+<p>在OFB模式中，进行XOR所需要的密钥流可以事先通过密码算法生成，而和明文分组或密文分组无关。这样的好处就是加密运算会很快完成。</p>
+</li>
+<li>
+<p>该模式也相当于是一种流密码加密的模式。</p>
+</li>
+</ul>
+<p>（5）CTR模式：CounTeR mode（计数器模式）</p>
+<p>原理：该模式下，每个分组对应一个逐次累加的计数器，通过对计数器进行加密来生成密钥流，然后与明文进行XOR运算。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143259801-219225671-803978840b4ab09a46ed7249590c5824.png" width="483" height="779" class="img_ev3q"></p>
+<p>特征：</p>
+<ul>
+<li>
+<p>与OFB模式极为相似，两者的区别仅在于密钥流的生成方式。</p>
+</li>
+<li>
+<p>密文分组中的对应的比特被翻转，那么明文分组也一样会被翻转，且该影响不会被放大（通常改变密文的比特，那么最终解密的明文差别会很大，如CBC）。这一点与OFB一样。</p>
+</li>
+<li>
+<p>在OFB模式中，如果密钥流的一个分组进行加密之后其结果碰巧与加密之前是一样的，那么这一分组之后的密钥流就会不断重复。这一点在CTR中不会出现。</p>
+</li>
+</ul>
+<p>（*）各模式之间的对比。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143402185-499783139-9557bea0675084f700b5dff5a3ef57be.png" width="1789" height="360" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143428486-1435603767-587d95fb1ca6c4d410d8bd3a3d842863.png" width="580" height="494" class="img_ev3q"></p>
+<p>5、<strong>对称密码</strong>：用相同的密钥进行加密和解密</p>
+<p>（1）一次性密码本--号称绝对不会被破译的密码。</p>
+<p>概述：只要通过暴力破解法遍历整个密钥空间，无论任何密文也总有一天都能够被破译。但是一次性密码本却除外，因为在对一次性密码本的密文尝试暴力破解的过程中会产生多种多样看起来“正确”的明文，以至于我们无法去判断到底哪一个“正确”的明文才是我们所需要的，因此一次性密码本是无法破译的。</p>
+<p>原理：将明文与一串和明文等长的随机比特序列进行XOR运算，产生的结果即是密文。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143453731-314420490-2a91fb6b559ff72db94da23d5abf3715.png" width="570" height="189" class="img_ev3q"></p>
+<p>特征：</p>
+<p>（2）Feistel网络</p>
+<p>概述：Feistel网络是DES的基本结构，该结构由Feistel所设计，因此也称为Feistel网络。该结构不仅被用于DES，在其它很多密码算法中也有应用。</p>
+<p>原理：在Feistel网络中，加密的各个步骤称为轮，整个加密过程就是进行若干次轮的循环。下图为1轮的加解密流程。</p>
+<p>在Feistel网络中，每一轮都需要使用一个不同的“子密钥”，子密钥只在一轮中被使用，它只是一个局部密钥，因此才称为子密钥。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143511440-2394638-af71f4101171e8efc306cc0de154501c.png" width="580" height="746" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143522850-1670962607-cd6ba4111ce2a82d4b779092b8efe1e8.png" width="580" height="498" class="img_ev3q"></p>
+<p>特征：</p>
+<ul>
+<li>
+<p>Feistel网络的1轮中，左侧的输入会被加密处理，右侧不进行加密处理。</p>
+</li>
+<li>
+<p>Feistel网络的轮数可以任意增加，而不影响加解密过程。</p>
+</li>
+<li>
+<p>任何函数均可以作为轮函数，而不管该函数是否存在可逆的反函数。因为大多数加密所使用的算法都是可逆的，这样才不至于只能加密而无法解密。</p>
+</li>
+<li>
+<p>只要使用Feistel网络，就可以保证一定能被解密。</p>
+</li>
+<li>
+<p>加密和解密的所使用的结构完全一样，只有子密钥的顺序有所不同而已。这种结构很少见。</p>
+</li>
+</ul>
+<p>综上所述，无论是任何轮数、任何轮函数、Feistel网络都可以用相同的结构实现加解密，且加密的结果一定能被正确解密。</p>
+<p>（3）DES(Data Encryption Standard)</p>
+<p>概述：DES是一种16轮循环的Feistel网络，它的分组长度为64比特的分组密码算法，它的密钥长度是64比特（由于每7比特设置1个错误检查的比特，因此它实际的密钥长度是56比特）。该算法目前可以在短时间内被暴力破解</p>
+<p>（4）三重DES。</p>
+<p>概述：基于DES可被破解，于是为了增加DES的强度，将DES重复3次所得到的一种密码算法就是三重DES。同理三重DES的密钥长度就是64*3=192比特（实际是56*3=168），而它的分组长度还是64比特。</p>
+<p>原理：三重DES并不是进行三次DES加密（加密-&gt;加密-&gt;加密），而是加密-&gt;解密-&gt;加密的过程，目的是为了兼容普通DES。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143555204-940473156-0467048ec94a53d0e930acf9d6c2844f.png" width="580" height="311" class="img_ev3q"></p>
+<p>特征：</p>
+<ul>
+<li>
+<p>如果三个密钥都是相同的比特序列，则其结果与普通DES是等价的。（12同3异、1异23同、123均同等价。因为加密和解密的的操作过程都是一样的，那么只要2步骤密钥相同，那么不管是先加密后解密还是先解密后加密，最终的结果都是明文。在这种情况下解密也相当于是加密了。）</p>
+</li>
+<li>
+<p>如果密钥1和3使用相同的密钥，而2使用不同的密钥，这种三重DES就称为DES-EDE2。</p>
+</li>
+<li>
+<p>如果三个密钥都使用不同的比特序列，这样的三重DES就称为DES-EDE3。</p>
+</li>
+<li>
+<p>处理速度不高，且安全性也逐渐显示出一些问题。</p>
+</li>
+</ul>
+<p>（5）AES（Advanced Encryption Standard）--Rijndael算法</p>
+<p>概述：AES只是一个头衔，只是它在众多候选算法中选择了Rijndael算法作为它的代表。Rijndael算法的分组长度为128比特，密钥长度可以是以32比特为单位在128-256比特范围内进行选择。（不过在AES的规格中，密钥长度只有128、192、256比特三种。）</p>
+<p>原理：Rijndael算法也是由众多轮所构成，只不过它的基本结构不是Feistel结构，而是SPN结构。该算法需要进行10-14轮的计算。</p>
+<p>Rijndael的输入分组为128比特，也就是16字节。首先需要逐个字节地对16字节的输入数据进行SubBytes处理（所谓SubBytes,就是在对应表的256组对应关系中，根据索引替换对应值的过程），在SubBytes之后需要进行ShiftRows处理（即将SubBytes的输出以字节为单位进行打乱处理，这种打乱是有规律的），ShiftRows之后需要进行MixColumns处理（即对一个4 字节的值进行比特运算，将其变为另外一个4字节值），最后进行AddRoundKey处理（即将MixColumns的输出与轮密钥进行XOR）。至此Rijndael的一轮就结束了。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143607055-286496395-c345b74a2929530f79ea38643dedbc54.png" width="800" height="345" class="img_ev3q"></p>
+<p>特征：</p>
+<ul>
+<li>
+<p>该结构输入的所有比特在一轮中都会被加密，和每一轮都只加密一半输入的比特的Feistel网络相比，这种方式的优势在于加密所需要的轮数更少。</p>
+</li>
+<li>
+<p>在SubBytes、ShiftRows和MixColumns部分可以分别按字节、行和列为单位进行并行计算。</p>
+</li>
+<li>
+<p>解密图中可知SubBytes、ShiftRows、MixColumns分别存在反向运算InvSubBytes、InvShiftRows、InvMixColumns，这是因为SPN网络不像Feistel网络一样能够用同一种结构实现加解密。</p>
+</li>
+</ul>
+<p>6、<strong>公钥密码</strong>：公钥加密，私钥解密</p>
+<p>（1）密钥配送问题：在对称密码中，由于加密和解密的密钥相同，因此发送者除了要将密文发送给接收者外，也必须给接收者配送密钥。而密钥必须要发送，但又不能发送，这就是对称密码的密钥配送问题。</p>
+<p>（2）密钥配送解决方案</p>
+<ol>
+<li>
+<p>事先共享密钥（私下将密钥手动移交）：所有人都有自己独立的对称共享密钥，当需要和对方通信时，必须将自己的密钥共享给对方。例：如果公司1000人，每个人都需要和另外999个人通信，每组通信所使用的密钥不能相同，那么总共需要生成1000*999/2=499500个密钥。</p>
+</li>
+<li>
+<p>密钥分配中心（所有密钥托管在中心服务器上，若服务器故障或攻击则全网有风险）：所有人都有自己独立的对称共享密钥，但是这个密钥除了自己和密钥分配中心服务器以外不会泄漏给其它人。双方需要通信时告知中心服务器，由服务器随机生成会话密钥，然后通过通信双方各自的对称密钥加密各自发给双方。双方通过解密用得到的会话密钥进行通信。</p>
+</li>
+<li>
+<p>Diffie-Hellman密钥交换：通信双方交换一些信息，然后双方根据交换的信息就可以各自生成相同的密钥。而这些交换的信息即便被第三者窃听，第三者也无法根据这些信息生成对应的密钥。</p>
+</li>
+<li>
+<p>公钥密码：加密和解密使用不同的密码进行，公钥加密私钥解密，发送者可以将公钥公开发送给接收者，接收者通过公钥加密然后发送给发送者，发送者通过私钥进行解密。这个过程中，即便第三者窃听公钥及密文，也无法对密文进行解密。（也就是说，公钥密码不存在密钥配送问题）</p>
+</li>
+</ol>
+<p>（3）公钥密码无法解决的问题</p>
+<ol>
+<li>
+<p>公钥认证问题：接收者所收到的公钥是否正确合法，接收者无法确定。（导致存在中间人攻击，解决办法是PKI证书设施）</p>
+</li>
+<li>
+<p>处理速度问题：公钥加解密的处理速度只有对称密钥的几百分之一。</p>
+</li>
+</ol>
+<p>（4）RSA</p>
+<p>（4.1）RSA加解密使用的完全就是数学中质数和模运算（时钟运算）之间进行的计算过程，因此要想彻底了解RSA需要明了质数和模运算之间的规律。</p>
+<p>（4.2）RSA的加解密。</p>
+<p>在RSA中，明文、密文、密钥都是数字，加解密过程就是数学公式的计算。（其中E和N两个数的组合就是公钥，E代表Encryption加密，D代表Decryption解密，N代表Number数字）</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143637706-875000814-000ceaa893d963c9ea799b5b8fd13f58.png" width="580" height="331" class="img_ev3q"></p>
+<p>（4.3）RSA密钥对的生成</p>
+<p>生成步骤分为4个阶段，求N、求L、求E、求D，其中NED是RSA密钥对的组成部分，而L只是在生成过程中需要被使用到，相当于一个临时数。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143657060-1985204529-43a00ca3bada6adeab82c578da925d8a.png" width="580" height="136" class="img_ev3q"></p>
+<p>实例：</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143707109-1420683813-23ed4876c7dfac5051ab86acb20d64fd.png" width="580" height="1344" class="img_ev3q"></p>
+<p>（4.4）公私钥生成时，会需要中间数据p、q（质数），根据pq产生NL，通过L生成E（E的值存在若干，但只选一个），之后根据EL产生D，此时EN组成公钥，DN组成私钥。</p>
+<p>由上可知：公私钥的产生是先有公钥再有私钥，而公钥EN人人可以获得，那么通过EN是否就可以计算出DN？由于无法知晓L，故不能成功。即便知道N，也不太可能反推出pq（除非N的值很小，那样就可能反推出pq，进而根据公钥得到私钥），也就无法得到L，故无法仅通过EN知道DN，或通过DN计算出EN。</p>
+<p>但是实际的公私钥生产中，我们发现是先生成私钥，然后通过私钥来产生公钥，这是什么原因？</p>
+<p>猜测：私钥文件中存储的应该不只是DN，它很可能还保留了（pq）LE这些重要信息。</p>
+<p>（4.5）其它公钥密码</p>
+<ol>
+<li>
+<p>EIGamal方式：RSA利用了质因数分解的困难度，而EIGamal利用了mod N下求离散对数的困难度。而且通过EIGamal加密的密文长度会变为明文的两倍。</p>
+</li>
+<li>
+<p>Rabin方式：利用了mod N下求平方根的困难度，与RSA分解质因数的困难度相当。</p>
+</li>
+<li>
+<p>椭圆曲线密码：通过将椭圆曲线上的特定点进行特殊的乘法运算来实现的，它利用了这种乘法运算的逆运算非常困难的特性。它的特点是所需的密钥长度比RSA短。</p>
+</li>
+</ol>
+<p>（4.6）密钥的长度通常都是1024比特即128字节，而编程语言中为整数分配的字节通常都是4字节，可知密钥所代表的这两个数字会有多么大，而对这样大的数进行质因数分解，困难程度可想而知（故一般认为不可能解密）。</p>
+<p>7、混合密码系统：将对称密码（处理速度快）和公钥密码（解决密钥配送问题）的优势相结合的密码系统。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143724019-1231782651-c9cac221a2b0ac008830bd5f15ea54bc.png" width="580" height="377" class="img_ev3q"></p>
+<p>8、<strong>单向散列函数</strong>--获取消息的指纹</p>
+<p>（1）完整性，又叫一致性。例如，昨天创建的文件，而今天看到的是否还是昨天的那个文件，文件的内容是否发生了改变，哪怕是一个标点符号或者是一个比特的不同。如果有改变，那么这个文件就不是真的，这种“是真的”的性质就叫做完整性。</p>
+<p>（2）完整性比对。文件的内容最终表现在磁盘存储中都是以比特序列的方式存在的，所以即便文件中只是变动了一个标点符号，那么符号所对应的编码序列都会不一样，存储在磁盘中的比特序列也就会改变。因此我们只需要比对昨天文件的比特序列与今天的比特序列是否一致。早先如果没有单向散列函数计算指纹，而仅靠人眼去对比这种差异会非常的困难。（如果内容确实没有改变，但是编码方式进行了改变，那么比特序列也会不一样。）</p>
+<p>（3）单向散列函数所处理的对象是比特序列，因此它不需要理会消息的类型是文本还是二进制，统一都当做比特序列来处理。而且散列值的长度都是固定的长度和输入消息的长度、大小无关。</p>
+<p>（4）单向散列函数（又叫消息摘要函数message digest function、哈希函数、杂凑函数）的性质：根据任意长度的消息计算出固定长度的散列值、能够快速计算出散列值、消息不同散列值不同、具备单向性（玻璃可以被砸碎，但是无法将碎片玻璃还原回完整玻璃）。</p>
+<p>（5）抗碰撞性。</p>
+<p>弱抗碰撞性：当给定某条消息的散列值时，单向散列函数必须确保要找到和该消息具有相同散列值的另外一条消息是非常困难的。（例如，10个随机数，找出值为5的另外一个数）</p>
+<p>强抗碰撞性：指要找到散列值相同的两条不同消息是非常困难的。（例如，10个随机数，找出值相同的一对数）</p>
+<p>备注：（1）所有单向散列函数可以不具备强抗碰撞性，但必须具备弱抗碰撞性。（2）从上面2个例子来看 ，10个数中找出值相同的一对数会较为容易一些，从容易度来看：弱抗碰撞性<code>&lt;</code>强抗碰撞性，但是如果强抗碰撞性更困难，那么对应的弱抗碰撞性岂不是更难。</p>
+<p>（6）单向散列函数的应用：检测软件是否被篡改、基于口令的加密、消息认证码、数字签名、伪随机数生成器、一次性口令。</p>
+<p>（7）单向散列函数的实现：MD4（散列值128比特）、MD5（散列值128比特）、SHA-1（散列值160比特）、SHA-256（散列值256比特）、SHA-384（散列值384比特）、SHA-512（散列值512比特）、RIPEMD-160（散列值160比特）。其中SHA-256、SHA-384、SHA-512合起来统称为SHA-2，SHA系列的算法的输入消息长度均存在上限。</p>
+<p>（8）单向散列函数SHA-1处理消息计算散列值的整体流程：</p>
+<ol>
+<li>
+<p>填充。函数的输入分组长度是512比特，故开始前需要对消息进行填充，使其长度是512比特的整数倍。</p>
+</li>
+<li>
+<p>计算W0-W79的值。根据输入的512比特分组计算出80个32比特的值（W0-W79）。80个W值只是80个步骤中每一个步骤处理中会用到的参数值。80个个步骤在不同阶段的处理过程各有差别。</p>
+</li>
+<li>
+<p>分组处理。根据步骤2得到的80个步骤参数，依次对160比特（5个32比特的值）的状态值进行处理。</p>
+</li>
+<li>
+<p>单步处理。各分组之间可以并行计算80个W的值，但是各分组的80步骤的处理只能依次进行。首先对160比特的初始状态进行处理，产生的160比特结果值作为第二分组的初始状态继续进行80步骤的处理，直至所有分组全部处理完毕，那时的160比特值就是所要计算的散列值。</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143756276-1524351449-c33068e602d67756708b86bc8da1b4c9.png" width="580" height="519" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143811494-1208302746-06508f8e83b6d62fcd81216fc723db21.png" width="1740" height="793" class="img_ev3q"></p>
+<p>（9）单向散列函数可以实现完整性的检查即辨别是否“篡改”，但是无法辨别“伪装”。</p>
+<p>9、<strong>消息认证码</strong>--消息是否被正确传输</p>
+<p>（1）消息认证码（Message Authentication Code）是一种确认完整性并进行认证的技术，也可以理解为是一种与密码相关联的单向散列函数。</p>
+<p>要计算MAC必须持有共享密钥，没有共享密钥就无法计算出MAC，消息认证码正是利用这一特性来完成认证。</p>
+<p>此外和单向散列函数的散列值一样，即便消息中发生1比特的变化，MAC的值也会发生变化，消息认证码正是利用这一特性来确认完整性的。</p>
+<p>（2）消息认证码的应用：SWIFT、IPsec、SSL/TLS。</p>
+<p>（3）消息认证码的实现方式：（1）使用MD5、SHA-1等单向散列函数（2）使用DES、AES之类的分组密码实现。利用CBC模式将消息分组全部加密，然后只取最后一个分组作为的值。</p>
+<p>（4）HMAC--一种使用单向散列函数实现的消息认证码，所使用的单向散列函数不局限于一种。如，SHA-1、MD5、RIPEMD-160，所构造的MAC分别称为HMAC-SHA-1、HMAC-MD5、HMAC-RIPEMD。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143827340-1351898238-6bc641a59dd17e99f892c592860a52a2.png" width="1000" height="538" class="img_ev3q"></p>
+<p>（5）重放攻击：事先保存正确的消息和对应的MAC值，然后不断重放来发动攻击，使得消息的内容被执行多次。</p>
+<p>预防：（1）序号：每次发送消息都赋予一个递增的序号，计算MAC时将该序号也包含在消息中。缺点就是每次通信需要记录最后一个消息的序号。（2）时间戳：每次发送消息时将当前时间包含进去，如果收到以前的消息直接丢弃。缺点就是通信双方的时种必须一致。（3）nonce：通信之前接收者首先发送一个一次性随机的值，发送者在发送消息时将这个值包含在消息中并计算MAC值。由于每次通信nonce这个随机值都不一样，因此可以抵御重放攻击。</p>
+<p>（6）散列值可以确保消息是否被篡改，但如果攻击者将消息修改并生成新的散列值来替代原来的散列值，此时便无法验证消息是否被更改。而消息验证码的主要作用就是防止消息和散列值被一同篡改。</p>
+<p>10、<strong>数字签名</strong>--可确认消息由谁所写</p>
+<p>（1）消息认证码的局限性：无法防止否认。是因为消息认证码需要在双方之间共享同一个密码，而且双方都可以都可以根据消息生成同样的MAC值。这样一来即便是A产生的消息，它也可以否认自己说是B产生的，旁人也无法找到证据来表明A的话是否正确。</p>
+<p>而通过使用数字签名，那么A便无法进行否认了，因为这样用私钥对消息进行签名而产生的值，其它人是无法生成的。而且还有一个好处就是，签名的信息可以由第三方拿公钥来验证。</p>
+<p>（2）在数字签名中，对签名密钥和验证密钥进行了区分，验证密钥（公钥）是无法生成签名的；同样，在公钥密码中，也对加密密钥和解密密钥进行了区分，用加密密钥（公钥）无法进行解密。</p>
+<p>其实，单从公私钥来说，不管是公钥还是私钥，如果一方被用来加密，那么另一方就是解密。但是在公钥密码和数字签名中却是分别对公私钥的使用进行了区分，主要是为了防止混乱，或者是防止被攻击。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143852158-611014936-c106f6313bcff162c5a241b452d7e8ce.png" width="580" height="104" class="img_ev3q"></p>
+<p>（3）数字签名的两种方式</p>
+<ol>
+<li>
+<p>直接对消息签名</p>
+</li>
+<li>
+<p>对消息的散列值进行签名</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811143906208-1183532222-f7b969ebd1d04de4211d95ad6162bd03.png" width="1000" height="505" class="img_ev3q"></p>
+<p>（4）在直接对消息签名的方式中，对消息的签名也相当于是消息的密文，那么密文为什么能作为签名使用？</p>
+<p>虽然实际处理的内容是通过用私钥进行加密的，但这里的加密并非是为了保证机密性而进行的。</p>
+<p>数字签名是利用了“没有私钥的人事实上无法生成使用该私钥所生成的密文”这一性质来实现的。这里所生成的密文并非用于保证机密性，而是被用于代表一种只有持有该密钥的人才能够生成的信息。</p>
+<p>这样的信息一般称为认证符号（相当于对暗号一般），消息认证码也是认证符号的一种，（只不过它只能证明对方不能供第三方去验证，适用范围有限。）数字签名也是一样。</p>
+<p>（5）这种签名只不过是计算机上的一种数据，那么这种签名可以随意复制吗？</p>
+<p>签名可以被随意复制，但不代表签名就没有意义，因为签名所表达的意义是特定的签名者对特定的消息进行了签名，即便签名被复制，也并不会改变签名者和消息的内容。即便消息的内容被更改而签名不变，但最终还是难免验证签名时会发生失败。</p>
+<p>（6）数字签名的应用：安全信息公告、软件下载、公钥证书、SSL/TLS。</p>
+<p>（7）数字签名的实现：就是前面使用公私钥对消息进行加密的过程，基本上公私钥的算法都可以实现签名。例如，RSA（可用于公钥密码和签名）、EIGamal（可用于公钥密码和签名）、DSA（只被用于签名）、Rabin（可用于公钥密码和签名）。</p>
+<p>（8）攻击：中间人攻击、对单向散列函数的攻击、利用数字签名攻击公钥密码</p>
+<p>（9）数字签名无法解决的问题。</p>
+<p>用数字签名既可以识别出篡改和伪装，还可以防止否认。然而要想正确使用数字签名，有一个大前提就是：用于验证签名的公钥必须属于真正的发送者，即无法确保公钥是否是伪造的。如果这一前提无法保障，那么后面的处理都将毫无意义，于是便有了证书。</p>
+<p>11、证书--为公钥加上数字签名（为公钥做保证）</p>
+<p>（1）证书的目的：用一个权威的私钥通过对另一个第三方的公钥进行签名来提升第三方公钥的可信度。</p>
+<p>（2）公钥证书 其实和驾照相似，里面记录了姓名、组织、邮箱等个人信息，以及此人的公钥，并由认证机构施加的数字签名。</p>
+<p>（3）认证机构就是能够认定“公钥确属此人”并生成签名的个人或组织。认证机构中有 国际性组织、政府设立的组织、通过提供认证服务来盈利的一般企业、还有可以是个人成立的认证机构。</p>
+<p>（4）证书使用的整体流程。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144335811-866556057-1bc3d2439f7f23c3074056a94bb9db20.png" width="580" height="338" class="img_ev3q"></p>
+<p>（5）认证机构所遵守的身份确认和认证业务准则。</p>
+<p>通过邮箱来确认身份的方式似乎不太可靠，因为人人都可以随意申请邮箱。所以验证方在验证时需要明确对方的身份确认方式，不可只根据授权公司的权威与否就相信所有的证书。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144345553-705268820-062a6d8c9f47e89ad3a62acaf60995f2.png" width="600" height="284" class="img_ev3q"></p>
+<p>（6）证书的规范</p>
+<p>证书是由认证机构颁发的，使用者需要对证书进行认证，因此如果证书的格式千奇百怪那就不方便了。于是人们制定了多种标准规范，其中以X.509的标准规范被广泛使用。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144357160-512389215-3c14b1b8dcd3890c5c3c0ba7ba676d30.png" width="758" height="863" class="img_ev3q"></p>
+<p>（7）公钥基础设施（PKI-Public Key Infrastructure）</p>
+<p>仅制定证书规范还不足以支持公钥进行有效的应用，我们还需要很多其它的规范，例如：证书由谁颁发、如何颁发、私钥泄漏时应该如何作废证书、计算机之间的数据交换应采用怎样的格式等， 而针对以上各项问题所制定的一系列规范的总称就叫做公钥基础设施（PKI）。</p>
+<p>（7.1）PKI组成三要素：用户（公钥所有者和众多的公钥使用者）、认证机构（管理证书的机构）、仓库（保存所有颁发证书的云端数据库，类似于电话本一样供第三方需要时下载使用）。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144405555-1831462981-98d1035b2f4217a8bdffbb31afd4238b.png" width="540" height="509" class="img_ev3q"></p>
+<p>（7.2）认证机构具体进行的操作</p>
+<ol>
+<li>
+<p>生成密钥对：可以由用户（证书申请者）自行生成或由认证机构去生成。</p>
+</li>
+<li>
+<p>身份认证：根据认证业务准则对用户的身份进行确认。</p>
+</li>
+<li>
+<p>生成并颁发证书：身份确认通过之后，使用认证机构的私钥对证书内容进行签名。</p>
+</li>
+<li>
+<p>作废证书与CRL：当用户的私钥丢失、被盗以及不需要时，认证机构需要对证书进行作废。纸质证书只需撕毁即可，但是数字证书副本太多。要作废证书，需由认证机构制作一张签过名的证书作废清单（Certificate Revocation List），上面记录着已作废证书的证书序列号。用户验证证书的软件在验证证书是否作废前只需要获取最新的清单，查询即可确认。（很多证书验证软件其实并不会及时获取CRL清单，以至于证书已经作废但还是验证通过。）</p>
+</li>
+</ol>
+<p>（7.3）证书的层级结构</p>
+<p>当用户在认证机构申请到证书之后，它需要对此证书的数字签名进行验证。认证前它需要先对认证机构的公钥证书进行验证，而认证机构的公钥证书可能又是另外一个认证机构颁发的，如此一来我们在验证低层的认证机构证书前需要先认证高一层的认证机构的证书。这样的关系可能会迭代好几层，这种层次就是证书的层级结构。</p>
+<p>但是不管层级结构迭代多少层，总不会无线延伸，总会存在一个终点，这个终点就是根CA，它公钥证书的颁发是使用自己的私钥进行签名颁发的，这种行为称为自签名。</p>
+<p>从证书验证的最终效果来看，统一都是由低层迭代到根，然后从根开始验证直至末端。（每一个证书都是记录颁发者的信息或颁发者证书的位置，这也就是证书验证软件可以不断迭代的根本所在。）</p>
+<p>（8）对证书的攻击：在公钥注册之前进行攻击、注册相似人名进行攻击、窃取认证机构的私钥进行攻击、攻击者伪装成认证机构进行攻击、钻CRL的空子进行攻击（时间差）</p>
+<p>12、<strong>伪随机数</strong>--不可预测性的源泉</p>
+<p>（1）随机数的用处：生成密钥、生成公私钥、生成初始化向量、生成nonce、生成盐。</p>
+<p>（2）随机数的性质</p>
+<ol>
+<li>
+<p>随机性（弱伪随机数）：随机数列必定是杂乱无章的，或者乍一看是杂乱无章但是数列中0一次没出现或一半数都是6这种也不算是杂乱无章。</p>
+</li>
+<li>
+<p>不可预测性（强伪随机数）：指攻击者在知道过去生成的随机数的前提下，依然无法预测出下一个生成出来的随机数的性质。例如，随机函数random，不过random还不能称为真随机数，因为只要在同样的环境下使用相同的种子便可以生成同样的随机序列。</p>
+</li>
+<li>
+<p>不可重现性（真随机数）：仅靠软件无法生成具备不可重现性的随机序列，因为运行软件的计算机环境拥有有限的内部状态，当内部条件一样时，软件必然会生成同样的随机序列。 要生成具备不可重现的随机序列，需要从不可重现的物理环境中来获取信息，如周围温度、声音、鼠标位置等。</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144425356-130886223-df5d46836bdd77883d11631f34deb26a.png" width="600" height="350" class="img_ev3q"></p>
+<p>（3）通过硬件设备生成的随机数列，这样的设备叫做随机数生成器。而通过软件生成的随机数列，这样的软件称为伪随机数生成器。</p>
+<p>伪随机数生成器具有初始“内部状态（一个值）”，外部输入的“种子”会初始化该内部状态，当外部有随机数请求时，随机算法会根据内部状态来生成随机数输出。随后，为了响应下一个请求，伪随机数生成器会改变自己的内部状态。（种子的信息很重要，如果种子值泄漏，那么攻击者就可以依次种子来生成同样的随机序列，进而可能会猜测处随机密钥。）</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144433735-122961322-0e31f2962890a7d5062058662faff5a9.png" width="358" height="286" class="img_ev3q"></p>
+<p>（4）伪随机数生成器的几种实现</p>
+<ol>
+<li>
+<p>线性同余法（仅具备随机性，不可用于密码技术）：第一个伪随机数R0=（A*种子+C）mod M，随后Rn+1=（A*Rn+C）mod M，依此公式生成随机序列。（攻击者可以在不知道ACM以及种子的情况下，根据随机序列值即可反推出ACM和种子的值）</p>
+</li>
+<li>
+<p>单向散列函数法（具备不可预测性）：根据单向散列函数生成的随机序列，攻击者如果要预测下一个随机值，就必须根据散列值反推内部状态，而破解散列值的单向性是非常困难的。故此处 单向散列函数的单向性是支撑伪随机数生成器不可预测性的基础。</p>
+</li>
+<li>
+<p>密码法（具备不可预测性）：根据加密算法生成的随机序列，攻击者要预测下一个随机值，就必须根据密文反推内部状态的值，而破译密码也是非常困难的。 故此处 密码的机密性是支撑伪随机数生成器不可预测性的基础。</p>
+</li>
+<li>
+<p>ANSI X9.17（具备不可预测性）：上述中关于伪随机数生成器实现的方法：单向散列函数法和密码法，两者只是理论说明，没有实际更细致的规范去实际使用，而ANSI X9.17是关于用密码法实现伪随机数生成器的具体办法。在这种生成器中，密码的使用保证了无法根据输出的伪随机数列来推测内部状态。即伪随机数生成器的内部状态是通过密码保护的。</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144443750-1577328918-06f0ec512e049b464c8171c6864fe3bb.png" width="993" height="801" class="img_ev3q"></p>
+<p>（5）随机数池：通常随机数的生成并非是在需要的时候才当场生成随机数，而是会事先在一个随机池的文件中积累随机比特序列。当需要时直接从中取出即可。例如，Linux系统中的/dev/random文件就是一个可以根据硬件设备驱动收集的背景噪声储存真随机数的随机数池。（其实计算机本身就可以是一个硬件设备真随机数生成器，无需外设。）</p>
+<p>13、密钥--秘密的精华</p>
+<p>（1）密钥通常都是一个很巨大的数字，但是数字本身的大小并不重要，重要的是密钥空间的大小，也就是可能出现的密钥的总数量。 因为密钥空间越大，进行暴力破解就越困难，而密钥空间的大小是由密钥长度决定的。</p>
+<p>（2）会话密钥和主密钥</p>
+<p>使用应用层协议HTTPS而建立起来的SSl/TLS加密通道，在这样的通道中所使用的共享密钥是仅限于本次通信的一次性密钥，下次通信时就不能再使用了。这种密钥就叫做会话密钥。相对于会话密钥，那些一直被重复使用的密钥被称为主密钥。</p>
+<p>一次性的会话密钥的好处就是，即便攻击者获取了本次通信的密钥，它也只能破译本次通信的内容。由于下次通信中会使用新的密钥，因此其它通信的机密性不会受到破坏。</p>
+<p>（3）加密内容的密钥称为CEK（Contents Encrypting Key），加密密钥的密钥称为KEK（Key Encrypting Key）。</p>
+<p>（4）密钥管理</p>
+<p>（4.1）生成密钥：随机数生成密钥、口令生成密钥（PBE基于口令的密码）</p>
+<p>（4.2）配送密钥：事先共享密钥、密钥分配中心、公钥密码、DH密钥交换</p>
+<p>（4.3）更新密钥：使用共享密钥的过程中，定期（例如每发送1000个字）改变密钥。当然，双方必须同时用同样的方法来改变密钥才行。</p>
+<p>更新密钥时，发送者和接收者使用单向散列函数计算当前密钥的散列值，并将这个散列值用作新的密钥。即用当前密钥的散列值作为下一个密钥。</p>
+<p>密钥更新的好处就是，假设在通信过程中的某个时间点上，密钥被攻击者窃取了，那么窃听者就会用这个密钥将之后的通信内容全部解密。但是却无法解密这个时间点之前的内容，因为这需要用单向散列函数的输出反算出输入。故单向散列函数的单向性保障了反算的困难。</p>
+<p>这种防止破译过去的通信内容的机制，称为向后安全。</p>
+<p>（4.4）保存密钥：通过加密密钥的密钥KEK，虽然没有解决密钥机密性的问题，但是它大大的减少了需要保管密钥的数量，由原来的多个密钥的保管，变成了一个密钥的保管。</p>
+<p>（4.5）作废密钥：不再使用的密钥必须妥善删除，否则如果被窃取了，那么之前的通信内容就都会被解密。如果密钥是一个文件，那么这个文件的删除必须特殊处理，否则文件被修复了就不好了。</p>
+<p>（5）Diffie-Hellman密钥交换（配送密钥）</p>
+<p>使用这种算法，通信双方仅通过交换一些可以公开的信息就能够生成出共享的秘密数字，而这一秘密数字就可以被用于共享密钥。此法=虽然叫做密钥交换，但实际上双方并未真正交换密钥，而是通过计算生成了相同的密钥，因此这种方法又叫做DH密钥协商。（通信过程即便被监听，也不会泄漏共享密码）</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144505847-1943294379-491adcde3186c88ca838c9f6540580ad.png" width="597" height="519" class="img_ev3q"></p>
+<p>举例如下</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144517883-1999903616-e652a7e54f6d67db0a651bc47cb5a6f1.png" width="680" height="1007" class="img_ev3q"></p>
+<p>（6）基于口令的密码PBE</p>
+<p>虽然人们可以使用便于记忆的口令来作为密钥，但实际上很少会直接用口令来作为密钥使用。一般都是将口令用单向散列函数处理，用得到的散列值作为密钥使用。又为了防止字典攻击，需要在口令上面附加一串称为盐的随机数，然后将其输入单向散列函数。这种方法就叫做“基于口令的密码”（Password Based Encryption）</p>
+<p>PBE是KEK的一种，算是解决了（4.4）保存密钥中那最后一个加密密钥的保存问题。因为用口令和盐生成的加密密钥，密钥可以直接丢弃，而口令记忆在大脑里就行。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144530770-5687669-d8c07fbc9cfe454e4662249ec7171db0.png" width="1375" height="722" class="img_ev3q"></p>
+<p>（7）盐的作用：抵御字典攻击。</p>
+<p>假设在生成KEK的时候没有加盐，那么攻击者就可以根据字典数据事先生成大量的候选KEK，以供获取到加密的密钥会话密钥之后可以快速尝试破解。而如果加了盐，那么则盐的长度越大，候选KEK的数量也会随之增大，这时事先生成候选KEK就会变得非常困难。因为加盐后的密钥空间=字典空间*盐的空间，而盐是一个随机序列，长度越大，密钥空间也会越大。</p>
+<p>如果攻击者也是在本机进行密码爆破，那么似乎只要对口令进行爆破即可，因为被加密的会话密钥和盐也在本地。而如果是远端爆破，因为没有盐的存在那么就会很费劲。</p>
+<p>14、PGP--密码技术的完美结合</p>
+<p>（1）PGP是一款对文件进行加解密、签名、验证的软件工具，几乎具备现代密码软件所必须的全部功能。同类型的工具还有GPG、Openssl。</p>
+<p>（2）PGP的功能：对称密码、公钥密码、数字签名（可以附加到加密文件上、或者单独分离成二进制文件或文本文件）、单向散列函数、证书、压缩（首先对数据压缩然后再加密）、文本数据（通过base64将无法传输二进制的文件编码为文本文件进行传输）、大文件拆分和拼合（文件太大无法传输时可拆分处理）、钥匙串管理（可以管理所生成的密钥对以及外部获取的公钥，用于管理的文件称为钥匙串，GPG的钥匙串在家目录/.gnupg/pubring.kbx）。</p>
+<p>（3）PGP加密、签名、加密及签名流程图</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144551394-102073683-190971b9cef909b018fb3b7b12c608f0.png" width="1237" height="882" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144602737-396286536-7560e393ff3ad895097709822fcce082.png" width="1072" height="888" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144609955-1925829180-766f4ba3e8a73c67837adba52ddd87ec.png" width="1030" height="818" class="img_ev3q"></p>
+<p>（4）信任网</p>
+<p>在使用公钥密码的过程中，一个首要问题就是公钥是否合法可信。证书就是确认公钥合法性的方法之一，它通过验证由认证机构签发的数字签名来确认证书合法性；在PGP中没有使用认证机构，而是通过用户互相之间对对方的公钥进行数字签名的方式来建立信任网以此来建立互相之间的信任关系。</p>
+<p>信任网的要点就是“不依赖认证机构，而建立起每个人之间的信任关系”，即由自己设置对谁进行何种级别的信任以此来决定要信任哪些公钥。</p>
+<p>PGP当初设计的目的是在连国家都不可信的情况下依然能够使用，因此它并不关心有没有可信的认证机构，而是采用“由用户自己来决定信任谁”这样的设计。</p>
+<p>（5）信任网中的3个场景：</p>
+<ol>
+<li>
+<p>通过自己的数字签名进行确认。</p>
+</li>
+<li>
+<p>通过自己完全信任的人的数字签名进行确认。</p>
+</li>
+<li>
+<p>通过自己有限信任的多个人的数字签名进行确认。</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144628869-1986648435-afa789c71b4123af9758c7e4f16fc783.png" width="546" height="209" class="img_ev3q"></p>
+<p>备注：A导入B的公钥此时的信任级别应该是unknown或undefined，当A对B的公钥进行签名之后，他的默认信任级别可能就是undefined了，当定义了级别之后，就会是2-4这三种状态了。</p>
+<p>每个用户可以自己给自己签名，即自签名。例如B自签名之后发给A，A在收到之后会在自己的密钥串中查找对应签名的公钥然后确定信任级别，以此来确认公钥是否可信。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144644649-284467222-796d6468c80d09258f9f502828801122.png" width="600" height="492" class="img_ev3q"></p>
+<p>15、SSL/TLS--安全通信</p>
+<p>（1）PGP是一款对文件进行加解密、签名、验证的软件工具，几乎具备现代密码软件所必须的全部功能。而SSL/TLS是一个提供安全传输通道的网络协议，它也是综合运用了对称密码、公钥密码、消息认证码、数字签名、伪随机数生成器等技术。</p>
+<p>（2）SSL/TLS提供了一种密码通信的框架，这意味着SSL/TLS中使用的对称密码、公钥密码、单向散列函数、数字签名等类型的技术，都是可以向零件一样进行替换。尽管可以替换，但并不是所有的组件都可以自由选择，因为实际上客户端和服务端对话时必须使用相同的密码技术才行，选择过于自由就难以保证整体的兼容性。为此SSL/TLS就像事先搭配盒饭一样，规定了一些密码技术的“推荐套餐”，这种套餐就叫密码套件。随着时间的推移，会不断有新的技术加入，同样也就会产生一些新的套件供 SSL/TLS协商选择。</p>
+<p>（3） TLS1.0（SSL3.1）协议组成</p>
+<p>TLS协议是由“TLS记录协议”和“TLS握手协议”这两层协议叠加而成，低层的记录协议负责确定上层的握手协议数据的封装格式，上层的握手协议则负责加密通道协商及其它应用层数据的加密操作。</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144657787-1358998686-3cd7d10eb5399367bcdccd9bf80ae35d.png" width="655" height="429" class="img_ev3q"></p>
+<p>（3.1）TLS记录协议：负责确定各种握手协议数据的封装格式。</p>
+<p>（3.2）TLS握手协议</p>
+<ol>
+<li>
+<p>握手协议（复杂）：负责在客户端和服务端之间协商决定密码算法和共享密钥，或基于证书对服务端或客户端的证书进行认证（匿名通信的情况下并不需要对证书进行认证）。</p>
+</li>
+<li>
+<p>密码规格变更协议：负责向通信对象传达变更密码方式的信号。（通信双方得到了通信算法及密码，但是还需要互相通知切换之后才能正式使用；即便已经建立了安全通道，CS双方也可以通过重新握手来再次改变密码套件，并使用此协议来再次切换密码。）</p>
+</li>
+<li>
+<p>警告协议：负责在发生错误时将错误传达给对方。（当握手协议过程中产生异常，或者消息认证码错误、压缩数据无法解压缩等问题时会使用该协议，没有发生错误就直接到应用数据协议了。）</p>
+</li>
+<li>
+<p>应用数据协议：负责将TLS上面承载的应用数据传达给对应的通信对象。</p>
+</li>
+</ol>
+<p>（4）记录协议处理流程</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144706940-200859267-877b41c092488512028239f173a28404.png" width="619" height="495" class="img_ev3q"></p>
+<p>（5）握手协议处理流程</p>
+<p><img decoding="async" loading="lazy" alt="image" src="/web/assets/images/1503193-20230811144714552-1485634357-b2adf5f1a4ef615a7e7bec4720d8fc8f.png" width="872" height="1394" class="img_ev3q"></p>
+<p>备注：数据包流程标识中，不加括号的是必须流程，圆括号是可选，中括号是非握手协议且必须。</p>
+<ol>
+<li>
+<p>第三步骤中，客户端会对服务器发来的证书进行验证。当以匿名方式通信时，不需要发送Certificate消息。即不需要步骤三，但需要步骤四（但是服务器端会生成一个随机的密钥对将公钥发给客户端【即步骤四】，而客户端只用此公钥对会话密钥进行加密传输。而客户端并不需要产生随机的密钥对并将公钥发给服务端。）</p>
+</li>
+<li>
+<p>第六步骤中，服务端会发送ServerHelloDone消息，表示从ServerHello消息开始的一系列消息的结束。（在ServerHelloDone之前有一些步骤可能并不是必须要求，而客户端并不知道这些要求是否也会被发送，因此服务器会通过ServerHelloDone这个消息来进行说明。）</p>
+</li>
+<li>
+<p>第七步骤中，客户端会发送自己的证书给服务端。这一步骤存在与否取决于第五步骤是否请求。（这个证书并不一定是通过认证机构颁发。）</p>
+</li>
+<li>
+<p>第八步骤中（同步骤四对应），客户端会将预备主密码发送给服务端。当使用RSA时，客户端将预备主密码通过服务端在步骤四发来的RSA公钥进行加密后发送（此时预备主密码由客户端生成发往服务端使用，也就无需步骤四）；当使用DH时，客户端将DH公开值发给服务端，让其计算生成预备主密码（此时预备主密码是由客户端和服务端共同决定生成，上图附带说明有问题）。（主密码【对称密码密钥、消息认证码密钥、CBC模式初始化向量】是根据预备主密码、客户端随机数、服务端随机数计算生成的。）【通常密钥交互都是以DH交互，而非RSA】</p>
+</li>
+<li>
+<p>第九步骤中，客户端会发送CertificateVerify消息。主要目的就是向服务器证明自己确实是证书私钥的拥有者。该消息其实就是客户端计算“主密码”和“握手协议中传送的消息”的散列值并加上自己的数字签名。这样在服务器收到之后会根据之前发来证书的公钥进行签名数据验证。（本步骤中重点只考虑客户端是否就是证书的拥有者即拥有私钥，而不关心客户端的证书是不是认证机构颁发的。因为仅靠发送证书不足以证明它拥有公钥对应的私钥，此时就只有通过客户端发过去的证书验证才能证明自己确实有私钥。）</p>
+</li>
+<li>
+<p>第十步骤中，CS之间已经交换了关于密码套件相关的信息，因此双方在收到这一消息之后就会同时切换密码。（服务端收到这个报文之后，紧接着把它要发给客户端的密码切换包发送，然后他才会开始切换密码。故双方应该不可能同时切换密码，因为双方根本没有办法可以知道对方收到了自己的报文。）</p>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="杂项">杂项<a href="#杂项" class="hash-link" aria-label="杂项的直接链接" title="杂项的直接链接">​</a></h3>
+<ol>
+<li>
+<p>虽然各公私钥生成工具所生成的公私钥的类型都是一样的，但是不同的应用所使用的公私钥的格式却是不一样的。例如，PGP使用的公钥文件的开头是以openpgp标识的格式、ssh所使用的是以openssl标识的格式、github网页中所使用的却是没有起始标识的格式。</p>
+</li>
+<li>
+<p>GPG/PGP命令中存在recipient（收件人）和local-user(发件人)两个参数选项，这是以公私钥为前提的条件下进行加密和签名时会用到。在本机使用公钥密码进行加密传输时，通常都是以接收方的公钥作为密钥进行的，当本机有多个接收方的公钥时通过参数recipient可以进行指定；而在本机使用公钥密码对收到的密文进行解密时通常都是用本机的私钥进行，或者是要进行签名时，都是用本机的某个私钥进行的。使用参数local-user可以进行指定。（不过解密时似乎不需要指定，密文文件本身似乎已经携带了私钥或者对应公钥的信息，自动就对应到了解密的私钥）</p>
+</li>
+<li>
+<p>通过对称密码加密文件时，大多数都会用到盐和初始化向量，盐的值会存储在加密文件的开头处（通过分析16进制可看到），而初始化向量应该也存在于文件中的某个位置处，只不过可能是被加密处理过无法看到其值。</p>
+</li>
+<li>
+<p>证书格式只是一种框架，里边可以放置根据各种公钥格式生成的公钥内容。</p>
+</li>
+<li>
+<p>PKCS#8是一种通用的私钥格式，PKIX是一种通用的公钥格式。PKCS#1是一种RSA专用的公私钥格式，其中既包含了私钥的格式也包含了公钥的格式，所以PKCS#1格式的公钥文件可以转换为PKIX格式的公钥。PKCS#10生成证书csr的规范。</p>
+</li>
+</ol>
+<hr></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/web/docs/杂项/VMware 中的三种网络模式"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">VMware 中的三种网络模式</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/web/docs/杂项/网络协议总结"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">网络协议总结</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#内容" class="table-of-contents__link toc-highlight">内容</a></li><li><a href="#杂项" class="table-of-contents__link toc-highlight">杂项</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="margin-bottom--sm"><a href="https://www.cnblogs.com/kqdssheng" rel="noopener noreferrer" class="footerLogoLink_BH7S"><img src="/web/img/logo.svg" alt="博客园" class="footer__logo themedComponent_mlkZ themedComponent--light_NVdE" width="30" height="30"><img src="/web/img/logo.svg" alt="博客园" class="footer__logo themedComponent_mlkZ themedComponent--dark_xIcU" width="30" height="30"></a></div></div></div></footer></div>
+</body>
+</html>
