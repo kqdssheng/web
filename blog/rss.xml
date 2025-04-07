@@ -4,20 +4,31 @@
         <title>扛枪的书生 Blog</title>
         <link>https://kqdssheng.github.io/web/blog</link>
         <description>扛枪的书生 Blog</description>
-        <lastBuildDate>Fri, 04 Apr 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 07 Apr 2025 11:44:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh</language>
         <item>
-            <title><![CDATA[我的第一条说说]]></title>
-            <link>https://kqdssheng.github.io/web/blog/01-清明节</link>
-            <guid>https://kqdssheng.github.io/web/blog/01-清明节</guid>
-            <pubDate>Fri, 04 Apr 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[今天是清明节，也是我发表的第一条说说]]></description>
-            <content:encoded><![CDATA[<p>今天是清明节，也是我发表的第一条说说</p>
-<p>今天真是难忘的一天，奋战2天终于将 网站调的差不多了，休息休息，明日继续肝。</p>]]></content:encoded>
+            <title><![CDATA[2025年4月7日]]></title>
+            <link>https://kqdssheng.github.io/web/blog/2025/04/07/日记</link>
+            <guid>https://kqdssheng.github.io/web/blog/2025/04/07/日记</guid>
+            <pubDate>Mon, 07 Apr 2025 11:44:14 GMT</pubDate>
+            <description><![CDATA[星期一 晴 ☀️]]></description>
+            <content:encoded><![CDATA[<p>星期一 晴 ☀️</p>
+<p>最近的拖延症有点严重，计划好的事情总是要拖到最后才开始行动。</p>
+<p>今早将本站的细节处理好之后，下午就要开始打靶了，这事本该上周就进行的，哎😮‍💨</p>]]></content:encoded>
             <category>日常</category>
-            <category>记录</category>
+        </item>
+        <item>
+            <title><![CDATA[2025年4月4日]]></title>
+            <link>https://kqdssheng.github.io/web/blog/2025/04/04/日记</link>
+            <guid>https://kqdssheng.github.io/web/blog/2025/04/04/日记</guid>
+            <pubDate>Fri, 04 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[星期五 多云 🌤️]]></description>
+            <content:encoded><![CDATA[<p>星期五 多云 🌤️</p>
+<p>今天是清明节，晚饭后漫步在路边，看到路边到处都在烧纸，火光冲天啊！</p>
+<p>今天同样也是值得纪念的一天，奋战2天终于将 本网站 调的差不多了，休息休息，明日继续肝。</p>]]></content:encoded>
+            <category>日常</category>
         </item>
     </channel>
 </rss>

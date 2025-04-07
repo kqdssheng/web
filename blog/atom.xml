@@ -2,20 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kqdssheng.github.io/web/blog</id>
     <title>扛枪的书生 Blog</title>
-    <updated>2025-04-04T00:00:00.000Z</updated>
+    <updated>2025-04-07T11:44:14.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kqdssheng.github.io/web/blog"/>
     <subtitle>扛枪的书生 Blog</subtitle>
     <icon>https://kqdssheng.github.io/web/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[我的第一条说说]]></title>
-        <id>https://kqdssheng.github.io/web/blog/01-清明节</id>
-        <link href="https://kqdssheng.github.io/web/blog/01-清明节"/>
-        <updated>2025-04-04T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[今天是清明节，也是我发表的第一条说说]]></summary>
-        <content type="html"><![CDATA[<p>今天是清明节，也是我发表的第一条说说</p>
-<p>今天真是难忘的一天，奋战2天终于将 网站调的差不多了，休息休息，明日继续肝。</p>]]></content>
+        <title type="html"><![CDATA[2025年4月7日]]></title>
+        <id>https://kqdssheng.github.io/web/blog/2025/04/07/日记</id>
+        <link href="https://kqdssheng.github.io/web/blog/2025/04/07/日记"/>
+        <updated>2025-04-07T11:44:14.000Z</updated>
+        <summary type="html"><![CDATA[星期一 晴 ☀️]]></summary>
+        <content type="html"><![CDATA[<p>星期一 晴 ☀️</p>
+<p>最近的拖延症有点严重，计划好的事情总是要拖到最后才开始行动。</p>
+<p>今早将本站的细节处理好之后，下午就要开始打靶了，这事本该上周就进行的，哎😮‍💨</p>]]></content>
         <category label="日常" term="日常"/>
-        <category label="记录" term="记录"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2025年4月4日]]></title>
+        <id>https://kqdssheng.github.io/web/blog/2025/04/04/日记</id>
+        <link href="https://kqdssheng.github.io/web/blog/2025/04/04/日记"/>
+        <updated>2025-04-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[星期五 多云 🌤️]]></summary>
+        <content type="html"><![CDATA[<p>星期五 多云 🌤️</p>
+<p>今天是清明节，晚饭后漫步在路边，看到路边到处都在烧纸，火光冲天啊！</p>
+<p>今天同样也是值得纪念的一天，奋战2天终于将 本网站 调的差不多了，休息休息，明日继续肝。</p>]]></content>
+        <category label="日常" term="日常"/>
     </entry>
 </feed>
